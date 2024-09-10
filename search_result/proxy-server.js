@@ -183,8 +183,8 @@ app.get('/search/image', function (req, res) {
 });
 
 
-
-app.listen(5500, function () {
+const PORT = process.env.PORT || 5500;
+app.listen(PORT, function () {
     console.log('Server is running at http://127.0.0.1:5500');
  });
 

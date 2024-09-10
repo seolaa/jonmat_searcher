@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "jonmat.js",
   "scripts": {
-    "start": "jonmat.js"
-    
+    "start": "node search_window/jonmat.js"
   },
   "keywords": [],
   "author": "",
