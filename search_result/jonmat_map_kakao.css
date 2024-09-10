@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
     text-align:left; 
     padding-left: 50px;
@@ -238,4 +239,246 @@ main ul li {
 footer {
     color:#333; text-align: center; 
     font-size: 0.85rem; margin-top: 200px;
+=======
+h1 {
+    text-align:left; 
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+@font-face{
+    font-family:'Freesentation-4Regular'; /*글꼴*/
+    src: local('Freesentation-4Regular'),
+        url('Freesentation-4Regular.eot'),
+        url('Freesentation-4Regular.woff') format('woff'),
+        url('Freesentation-4Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'Freesentation-7Bold'; /*글꼴*/
+    src: local('Freesentation-7Bold'),
+        url('Freesentation-7Bold.eot'),
+        url('Freesentation-7Bold.woff') format('woff'),
+        url('Freesentation-7Bold.ttf') format('truetype');
+}
+
+
+
+#searchQuery{
+    font-family: 'Freesentation-7Bold', sans-serif;/*웹 폰트 지정*/
+    font-size: 4em;
+    margin-left: 50px;
+
+}
+
+main .first {
+    display: inline-block;
+}
+
+main .m {
+    padding-left: 50px;
+}
+
+main .s {
+    font-family: 'Freesentation-7Bold', sans-serif;/*웹 폰트 지정*/
+    position:absolute;
+    padding-left: 50px;
+}
+
+main .s h3 {
+    font-size:25px;
+    padding-left: 50px;
+}
+
+#map {
+    border:1px solid #303030;
+}
+
+
+main .s ul {
+
+}
+
+main .s ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:#333;
+}
+
+.first.s ul li a { /* 상단 리스트*/
+    font-family: 'Freesentation-4Regular', sans-serif;/*웹 폰트 지정*/
+    color:#333;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+
+.first.s ul li::marker { /* 상단 리스트 점들.. */
+    content:"👉 ";  
+}
+
+main form button {
+    margin-top: 50px; 
+    margin-left: 50px; 
+    margin-bottom: 40px;
+}
+
+main form .naver_button{
+    font-size: 23px;
+    font-family: 'Freesentation-4Regular', sans-serif;/*웹 폰트 지정*/
+    background:  linear-gradient(to top, #0BC904, white);
+    border:1px solid #303030;
+    border-radius: 25px;
+    width: 160px; height: 60px;
+}
+
+main form .google_button{
+    font-size: 23px;
+    font-family: 'Freesentation-4Regular', sans-serif;/*웹 폰트 지정*/
+    background: linear-gradient(to top,#ea4335,white);
+    border:1px solid #303030;
+    border-radius: 25px;
+    width: 160px; height: 60px;
+}
+
+main form .kakao_button{
+    font-size: 23px;
+    font-family: 'Freesentation-4Regular', sans-serif;/*웹 폰트 지정*/
+    background: linear-gradient(to top,#ffcd01,white);
+    border: 1px solid #303030;
+    border-radius: 25px;
+    width: 160px; height: 60px;
+}
+
+main .second div{
+    display: inline-block;
+    width:100%;
+}
+
+main .second div h3 {
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 40px; 
+    margin-left: 50px;
+}
+
+main .second div select{
+    float: right;
+    margin-top: 30px; 
+    margin-right: 30px;
+    width: 130px; height: 25px;
+    border:1px solid #333;
+}
+
+main ul {
+    
+}
+
+main ul li {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:#333;
+}
+
+#comment-section {
+    margin-left: 50px;
+}
+
+#photos-container {
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    overflow-x: auto;  /* 좌우 스크롤 가능 */
+    white-space: nowrap;  /* 사진들이 한 줄로 배치되도록 설정 */
+    gap: 10px;  /* 사진들 사이의 여백 */
+    padding: 10px;  /* 내부 여백 */
+    width: 100vw;  /* 화면의 가로 크기에 맞게 설정 */
+    max-width: 100%;  /* 최대 너비를 화면 너비로 제한 */
+    box-sizing: border-box;  /* 패딩을 포함한 크기 계산 */
+}
+.place-photo {
+    width: 200px;  /* 사진의 가로 크기 */
+    height: 150px; /* 사진의 세로 크기 */
+    object-fit: cover; /* 이미지 비율을 유지하며 잘림 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    flex-shrink: 0;  /* 사진이 flex 컨테이너 안에서 줄어들지 않도록 설정 */
+}
+
+/* 스크롤바 스타일링 (선택 사항) */
+#photos-container::-webkit-scrollbar {
+    height: 12px;
+}
+
+#photos-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+#photos-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+#ratingDisplay {
+    font-family: 'Freesentation-7Bold', sans-serif;/*웹 폰트 지정*/
+    margin-top: 40px;  /* 사진과 별점 사이에 여백 */
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;  /* 필요 시 정렬 조정 가능 */
+}
+
+/* 댓글을 감싸는 review-item 클래스 */
+.review-item {
+    margin-top: 30px;
+    margin-left: 10px; /* 댓글 전체 여백 */
+    margin-bottom: 30px; /* 댓글 간 간격 */
+    font-size: 18px; /* 기본 글씨 크기 */
+    color: #333; /* 기본 글씨 색상 */
+    padding-left: 30px; /* 마커를 위한 여백 */
+    position: relative; /* 마커 추가를 위해 relative 설정 */
+}
+
+/* 마커 스타일 */
+.review-item::before {
+    content: "📌 "; /* 이모지 마커 */
+    position: absolute;
+    left: 0; /* 마커를 div 왼쪽에 붙이기 */
+    top: 0;
+    font-size: 23px; /* 마커 크기 */
+}
+
+/* 작성자 이름 (strong 태그) 스타일 */
+.review-item strong {
+    font-family: 'Freesentation-7Bold', sans-serif; /* 작성자 이름 폰트 */
+    font-size: 23px; /* 글씨 크기 */
+    color: black; /* 검정색 */
+}
+
+/* 댓글 내용 (p 태그) 스타일 */
+.review-item p {
+    font-family: 'Freesentation-4Regular', sans-serif; /* 댓글 내용 폰트 */
+    font-size: 20px;
+    color: rgb(53, 53, 53); /* 회색 */
+    margin-top: 15px; /* 작성자와 댓글 사이의 간격 */
+    display: block;
+}
+
+
+.container {
+    width: 360px;
+}
+
+
+#comment-section {
+    margin-left: 50px;
+}
+  
+#comment-section .review-item{
+    margin-bottom: 30px;
+}
+footer {
+    color:#333; text-align: center; 
+    font-size: 0.85rem; margin-top: 200px;
+>>>>>>> f8bfd2b (Initial commit)
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
     text-align:center; 
     margin: 50px auto 30px; 
@@ -29,4 +30,37 @@ h1 {
 }
 footer{
     color:#333; text-align: center; font-size: 0.85rem; margin-bottom: 300px;
+=======
+h1 {
+    text-align:center; 
+    margin: 50px auto 30px; 
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.search-box {
+    border-radius: 10%;
+    height:500px;
+    margin-right:0;
+    text-align:center;
+}
+.search-text {
+    display:inline-block;
+    width:45%; height:5%;
+    margin: 50px auto;
+    text-align:left; padding-left: 7px;
+    margin-right:0;
+}
+.search-button {
+    border: 1px solid; 
+    padding:5px 0; 
+    width:60px; height:32px;
+    border-radius: 10%;
+    margin-left:0;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    color:#333; text-align: center; font-size: 0.85rem; margin-bottom: 300px;
+>>>>>>> f8bfd2b (Initial commit)
 }

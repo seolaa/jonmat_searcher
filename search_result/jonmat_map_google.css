@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
     text-align:left; 
     padding-left: 50px;
@@ -191,4 +192,199 @@ main form .kakao_button{
 footer {
     color:#333; text-align: center; 
     font-size: 0.85rem; margin-top: 200px;
+=======
+h1 {
+    text-align:left; 
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+@font-face{
+    font-family:'Freesentation-4Regular'; /*글꼴*/
+    src: local('Freesentation-4Regular'),
+        url('Freesentation-4Regular.eot'),
+        url('Freesentation-4Regular.woff') format('woff'),
+        url('Freesentation-4Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'Freesentation-7Bold'; /*글꼴*/
+    src: local('Freesentation-7Bold'),
+        url('Freesentation-7Bold.eot'),
+        url('Freesentation-7Bold.woff') format('woff'),
+        url('Freesentation-7Bold.ttf') format('truetype');
+}
+
+
+
+#searchQuery{
+    font-family: 'Freesentation-7Bold', sans-serif;/*웹 폰트 지정*/
+    font-size: 4em;
+    margin-left: 50px;
+
+}
+
+main .first {
+    display: inline-block;
+}
+
+main .m {
+    padding-left: 50px;
+}
+
+main .s {
+    position:absolute;
+    padding-left: 50px;
+}
+
+main .s h3 {
+    margin-left: 50px;
+    font-family: 'Freesentation-7Bold', sans-serif;/*웹 폰트 지정*/
+    font-size:25px;
+}
+
+#map {
+    border:1px solid #303030;
+}
+
+main .s ul li {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:#333;
+}
+
+.first.s ul li a { /* 상단 리스트*/
+    font-family: 'Freesentation-4Regular', sans-serif;/*웹 폰트 지정*/
+    color:#333;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+
+.first.s ul li::marker { /* 상단 리스트 점들.. */
+    content:"👉 ";  
+}
+
+main form button {
+    margin-top: 50px; 
+    margin-left: 50px; 
+    margin-bottom: 40px;
+}
+
+main form .naver_button{
+    font-size: 23px;
+    font-family: 'Freesentation-4Regular', sans-serif;/*웹 폰트 지정*/
+    background:  linear-gradient(to top, #0BC904, white);
+    border:1px solid #303030;
+    border-radius: 25px;
+    width: 160px; height: 60px;
+}
+
+main form .google_button{
+    font-size: 23px;
+    font-family: 'Freesentation-4Regular', sans-serif;/*웹 폰트 지정*/
+    background: linear-gradient(to top,#ea4335,white);
+    border:1px solid #303030;
+    border-radius: 25px;
+    width: 160px; height: 60px;
+}
+
+main form .kakao_button{
+    font-size: 23px;
+    font-family: 'Freesentation-4Regular', sans-serif;/*웹 폰트 지정*/
+    background: linear-gradient(to top,#ffcd01,white);
+    border: 1px solid #303030;
+    border-radius: 25px;
+    width: 160px; height: 60px;
+}
+
+
+/* 사진 컨테이너 스타일 */
+.photos-container {
+    display: flex;
+    overflow-x: auto;  /* 좌우 스크롤 가능 */
+    white-space: nowrap;  /* 사진들이 한 줄로 배치되도록 설정 */
+    gap: 10px;  /* 사진들 사이의 여백 */
+    padding: 10px;  /* 내부 여백 */
+    margin-bottom: 20px;  /* 사진과 리뷰 리스트 간 공백 설정 */
+}
+
+/* 사진 스타일 */
+.place-photo {
+    height: 150px;
+    width: auto;
+    object-fit: cover;  /* 이미지 비율을 유지하며 크기에 맞춰 자름 */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* 스크롤바 스타일링 */
+.photos-container::-webkit-scrollbar {
+    height: 12px;  /* 가로 스크롤바 높이 */
+}
+
+.photos-container::-webkit-scrollbar-thumb {
+    background-color: #888;  /* 스크롤바 색상 */
+    border-radius: 10px;  /* 스크롤바 둥글게 */
+}
+
+.photos-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;  /* 스크롤바 배경색 */
+}
+
+/* 평균 별점 스타일 */
+#average-rating {
+    font-family: 'Freesentation-7Bold', sans-serif;/*웹 폰트 지정*/
+    margin-top: 40px;  /* 사진과 별점 사이에 여백 */
+    
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;  /* 필요 시 정렬 조정 가능 */
+}
+
+#reviews-list {
+    margin-left:10px;
+    margin-top:10px;
+}
+
+
+
+#reviews-list p {
+    font-family: 'Freesentation-4Regular', sans-serif;/*웹 폰트 지정*/
+    font-size: 20px;
+    color:rgb(53, 53, 53);
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+#reviews-list a {
+    font-family: 'Freesentation-7Bold', sans-serif;/*웹 폰트 지정*/
+    font-size: 23px;
+    color:black;
+    text-decoration-line: none;
+    margin-left: 0px;
+}
+
+#reviews-list li{
+    list-style: none; /* 기본 마커를 없애기 */
+    margin-left: 0;  /* 마커와 텍스트 간 공백 제거 */
+    padding-left: 10px; /* 여백 제거 */
+}
+
+#reviews-list li::before{
+    content: "📌 ";
+    margin-right: 0px;  /* 텍스트와 이모지 간 여백 */
+    
+}
+
+.container {
+    width: 360px;
+}
+
+  
+footer {
+    color:#333; text-align: center; 
+    font-size: 0.85rem; margin-top: 200px;
+>>>>>>> f8bfd2b (Initial commit)
 }
