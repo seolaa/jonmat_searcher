@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <title>맛집 검색기 결과 ദ്ദി ˉ͈̀꒳ˉ͈́  ✧ </title>
+     
+        <link rel="stylesheet" href="jonmat_map_google.css">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAt6s9__c7nfUhDdRDikAZvUMotVd9aebM&libraries=places"></script>
+    </head>
+
+    <body>
+        <p id="searchQuery">#input 의 리뷰를 보여드릴게요!</p>
+
+        <main>
+            <div class="first m">
+                <div id="map" style="width:450px;height:400px;"></div>
+            </div>
+
+            <div class="first s">
+                <h3>📌 리뷰 요약</h3>
+                <ul>
+                    
+                </ul>
+            </div>
+
+            <form>
+                <button class="naver_button">네이버</button>
+                <button class="google_button">구글맵</button>
+                <button class="kakao_button">카카오맵</button>
+            </form>
+
+           
+
+            <!-- 카카오 지도 스크립트 로드 -->
+            <script id="map" type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=0bc7265c59dc22c23027f6ea14e24764&libraries=services"></script>
+        
+
+            <ul id="reviews-list">
+                <!-- 리뷰가 여기에 표시됩니다 -->
+            </ul>
+
+           
+            
+        </main>
+        
+        <footer>
+            해당 맛집 검색기는 네이버, 구글맵, 카카오맵의 리뷰를 참고하여 정보를 제공합니다.
+        </footer>
+
+
+        <script src="jonmat_map_google.js"></script>
+        
+    </body>
+
+</html>
