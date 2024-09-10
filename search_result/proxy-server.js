@@ -23,7 +23,7 @@ app.get('/proxy/kakao/searchPlace', async (req, res) => {
 
     console.log(`카카오맵에서 검색 요청을 받았습니다. 검색어: ${query}`);
 
-    const kakaoSearchUrl = `https://dapi.kakao.com/v2/local/search/keyword.json?query=${encodeURIComponent(query)}`;
+    const kakaoSearchUrl = `https://corsproxy.io/?https://dapi.kakao.com/v2/local/search/keyword.json?query=${encodeURIComponent(query)}`;
 
     try {
         const response = await axios.get(kakaoSearchUrl, {
@@ -81,7 +81,7 @@ app.get('/proxy/kakao/comments', async (req, res) => {
     }
 
     console.log(`Place ID: ${placeId}에 대한 댓글 및 별점 요청을 받았습니다.`);
-    const kakaoApiUrl = `https://place.map.kakao.com/commentlist/v/${placeId}`;
+    const kakaoApiUrl = `https://corsproxy.io/?https://place.map.kakao.com/commentlist/v/${placeId}`;
 
     try {
         const response = await axios.get(kakaoApiUrl);
@@ -120,7 +120,7 @@ app.get('/proxy/kakao/photolist', async (req, res) => {
     }
 
     console.log(`Place ID: ${placeId}에 대한 이미지 요청을 받았습니다.`);
-    const kakaoApiUrl = `https://place.map.kakao.com/photolist/v/${placeId}`;
+    const kakaoApiUrl = `https://corsproxy.io/?https://place.map.kakao.com/photolist/v/${placeId}`;
 
     try {
         const response = await axios.get(kakaoApiUrl);
@@ -140,7 +140,7 @@ app.get('/proxy/kakao/photolist', async (req, res) => {
 
 // 블로그 검색 api
 app.get('/search/blog', function (req, res) {
-    var api_url = 'https://openapi.naver.com/v1/search/blog?query=' + encodeURI(req.query.query);
+    var api_url = 'https://corsproxy.io/?https://openapi.naver.com/v1/search/blog?query=' + encodeURI(req.query.query);
     var options = {
         url: api_url,
         headers: {
@@ -162,7 +162,7 @@ app.get('/search/blog', function (req, res) {
 
  // 이미지 검색 API 라우트
 app.get('/search/image', function (req, res) {
-    var api_url = 'https://openapi.naver.com/v1/search/image?query=' + encodeURI(req.query.query);
+    var api_url = 'https://corsproxy.io/?https://openapi.naver.com/v1/search/image?query=' + encodeURI(req.query.query);
     var options = {
         url: api_url,
         headers: {
